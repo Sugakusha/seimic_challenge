@@ -30,7 +30,7 @@
 содежимое исходных данных:
 + набор изображений для обучения
 + набор изображений для тестирования
-+ baseline на pytorch с U-net+ResNet34
++ baseline на pytorch с ResNet34
 + маски(.csv файл)
 + пример сабмита
 + .npy файлы
@@ -44,7 +44,7 @@
 + валидация: 224 изображений
 + тестирование: 168 изображений
 
-Обучены 2 сети U-net и U-net+ResNet34 c общими параметрами:
+Обучены 2 сети U-net и ResNet34 c общими параметрами:
 + seed: 42
 + epohs: 200 
 + batch: 4
@@ -66,16 +66,16 @@
 |модель|название файла|dice|jaccard|эпох|время|
 |:------|:--------:|:-----:|:--------:|:-------:|-------:|
 |u-net|seisma_rosneft_unet.ipynb|0.9953893738843146|0.9910568839737347|107|3ч 45м 8с|
-|resnet34-unet|seisma_rosneft_resnet34unet.ipynb|0.9965058061338606|0.9931607264138403|183|6ч 38м 23с|
+|resnet34|seisma_rosneft_resnet34unet.ipynb|0.9965058061338606|0.9931607264138403|183|6ч 38м 23с|
 
 
 
 
-#### наиболее точное предсказание resnet34+unet c jaccard coef = 0.994594 	  dice coef = 0.997265
+#### наиболее точное предсказание resnet34 c jaccard coef = 0.994594 	  dice coef = 0.997265
 ![наиболее точное предсказание resnet34+unet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/best_dice_resnet.png )
-#### наиболее точное предсказание resnet34+unet c jaccard coef = 0.993608 	  dice coef = 0.996741
+#### наиболее точное предсказание unet c jaccard coef = 0.993608 	  dice coef = 0.996741
 ![наиболее точное предсказание unet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/best_dice_unet.png)
-#### наименее точное предсказание resnet34+unet c jaccard coef = 0.990600 	  dice coef = 0.995173
+#### наименее точное предсказание resnet34 jaccard coef = 0.990600 	  dice coef = 0.995173
 ![наименее точное предсказание resnet34+unet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/worst_dice_resnet.png)
-#### наименее точное предсказание resnet34+unet c jaccard coef = 0.979881 	   dice coef = 0.989472
+#### наименее точное предсказание unet c jaccard coef = 0.979881 	   dice coef = 0.989472
 ![наименее точное предсказание runet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/worst_dice_unet.png)
