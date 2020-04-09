@@ -1,6 +1,7 @@
 # Сегментация сейсмических отражающих горизонтов
 
-посты на эту тему:[habr.com](https://habr.com/ru/company/ods/blog/482780/),[habr.com])(https://habr.com/ru/company/ods/blog/488852/)
+посты на эту тему:[habr.com](https://habr.com/ru/company/ods/blog/482780/)
+[habr.com](https://habr.com/ru/company/ods/blog/488852/)
 
 
 близкие соревнования:[kaggle.com](https://www.kaggle.com/c/tgs-salt-identification-challenge)
