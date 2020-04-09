@@ -1,8 +1,14 @@
-# seimic_challenge
-segmentation of reflecting horizons
+# Сегментация сейсмических отражающих горизонтов
 
+посты на эту тему:[habr.com](https://habr.com/ru/company/ods/blog/482780/),[habr.com])(https://habr.com/ru/company/ods/blog/488852/)
+
+
+близкие соревнования:[kaggle.com](https://www.kaggle.com/c/tgs-salt-identification-challenge)
 
 исходные данные данные: [booster.ru](https://boosters.pro/championship/rsc_sandbox/overview)
+
+
+
 содежимое:
 + набор изображений для обучения
 + набор изображений для тестирования
@@ -35,7 +41,7 @@ segmentation of reflecting horizons
 
 
 
-# РЕЗУЛЬТАТЫ
+## РЕЗУЛЬТАТЫ
 
 |модель|dice|jaccard|эпох|время|
 |:------|:-----:|:--------:|:-------:|-------:|
