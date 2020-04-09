@@ -11,4 +11,7 @@ segmentation of reflecting horizons
 |resnet34-unet|0.9965058061338606|0.9931607264138403|183|6ч 38м 23с|
 
 
-![лучшие по точности(dice) предсказание](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/best_dice_resnet.png)
+![наиболее точное предсказание resnet34+unet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/best_dice_resnet.png)
+![наиболее точное предсказание unet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/best_dice_unet.png)
+![наименее точное предсказание resnet34+unet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/worst_dice_resnet.png)
+![наименее точное предсказание runet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/worst_dice_unet.png)
