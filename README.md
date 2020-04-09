@@ -49,6 +49,7 @@
 + epohs: 200 
 + batch: 4
 + loss: 0.75 * (1 - dice) + 0.25 * binary_crossentropy
++ metrics: 1 - dice
 + optimizers: Adam(lr = 0.0001)
 + callbacks: EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
 
