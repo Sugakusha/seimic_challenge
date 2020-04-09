@@ -5,10 +5,10 @@ segmentation of reflecting horizons
 исходные данные данные взяты из соревнования 
 
 
-Для обучения и тестирования исходные данные были разделены следующим образом: 
-+ train: 504 
-+ valid: 224 
-+ test: 168
+Для обучения и тестирования исходные изображения были разделены следующим образом: 
++ обучение: 504 изображений
++ валидация: 224 изображений
++ тестирование: 168 изображений
 
 Обучены 2 сети U-net и U-net+ResNet34 c общими параметрами:
 + seed: 42
@@ -17,6 +17,13 @@ segmentation of reflecting horizons
 + loss: 0.75 * (1 - dice) + 0.25 * binary_crossentropy
 + optimizers: Adam(lr = 0.0001)
 + callbacks: EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
+
+Аугментaция и предобработка изображений:
++ Resize(384, 384)
++ HorizontalFlip(p = 0.5)
++ Rotate(limit = 20, p = 0.5)
++ ElasticTransform(p = 0.5)
++ Normalize(mean = (0.485, 0.456, 0.406), std = (0.229, 0.224, 0.225))
 
 
 
