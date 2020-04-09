@@ -13,7 +13,7 @@
   - xline: 384x512
   - inline:  384х384
 
-## Полезные ссылкы для решения
+## Полезные ссылкы
 посты на эту тему:[habr.com](https://habr.com/ru/company/ods/blog/482780/),
 [habr.com](https://habr.com/ru/company/ods/blog/488852/)
 
