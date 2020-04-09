@@ -5,6 +5,11 @@ segmentation of reflecting horizons
 исходные данные данные взяты из соревнования 
 
 
+Для обучения и тестирования исходные данные были разделены следующим образом: 
++ train: 504 
++ valid: 224 
++ test: 168
+
 Обучены 2 сети U-net и U-net+ResNet34 c общими параметрами:
 + seed: 42
 + epohs: 200 
@@ -25,11 +30,11 @@ segmentation of reflecting horizons
 
 
 
-#### наиболее точное предсказание resnet34+unet c jaccard coef = 0.994594 	dice coef = 0.997265
+#### наиболее точное предсказание resnet34+unet c jaccard coef = 0.994594 	  dice coef = 0.997265
 ![наиболее точное предсказание resnet34+unet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/best_dice_resnet.png )
-#### наиболее точное предсказание resnet34+unet c jaccard coef = 0.993608 	dice coef = 0.996741
+#### наиболее точное предсказание resnet34+unet c jaccard coef = 0.993608 	  dice coef = 0.996741
 ![наиболее точное предсказание unet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/best_dice_unet.png)
-#### наименее точное предсказание resnet34+unet c jaccard coef = 0.990600 	dice coef = 0.995173
+#### наименее точное предсказание resnet34+unet c jaccard coef = 0.990600 	  dice coef = 0.995173
 ![наименее точное предсказание resnet34+unet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/worst_dice_resnet.png)
-#### наименее точное предсказание resnet34+unet c jaccard coef = 0.979881 	dice coef = 0.989472
+#### наименее точное предсказание resnet34+unet c jaccard coef = 0.979881 	   dice coef = 0.989472
 ![наименее точное предсказание runet](https://raw.githubusercontent.com/Sugakusha/seimic_challenge/master/pic/worst_dice_unet.png)
